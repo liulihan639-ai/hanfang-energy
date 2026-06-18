@@ -31,4 +31,26 @@
 .fade{opacity:0;transform:translateY(20px)}.fade.vis{animation:fadeUp .6s ease forwards}@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 
 @media(max-width:1024px){.ft-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){.hd-nav,.hd-r{display:none}.mob-tog{display:block}.page-hero{padding:100px 0 60px}.page-hero h1{font-size:28px}.sec{padding:56px 0}.cta-in{flex-direction:column;text-align:center;gap:24px}.ft-grid{grid-template-columns:1fr}.ft-btm{flex-direction:column;gap:8px;text-align:center}.wa-float{bottom:20px;right:20px;padding:14px 16px}.wa-float .wa-label{display:none}.soc-share{display:none}}
+@media(max-width:768px){
+  .hd-in{height:60px;padding:0 16px}
+  .hd-nav{display:none}.hd-r{display:none}
+  .mob-tog{display:block}
+  .hd-nav.mob-open{display:flex;top:60px;left:12px;right:12px;padding:16px 20px;border-radius:12px;z-index:100}
+  .hd-nav.mob-open a{padding:12px 0;font-size:15px}
+  .mob-lang{display:none !important;align-items:center;gap:12px;padding:12px 0;border-top:1px solid rgba(255,255,255,.08);margin-top:4px}
+  .hd-nav.mob-open .mob-lang{display:flex !important}
+  .mob-lang a{padding:8px 16px !important;border:1px solid rgba(255,255,255,.15);border-radius:6px;font-size:13px !important;text-align:center;flex:0 0 auto}
+  .mob-lang a.on{background:rgba(255,255,255,.15);color:#fff !important}
+  .page-hero{padding:80px 16px 48px}.page-hero h1{font-size:26px;line-height:1.25}
+  .sec{padding:48px 0}.sec-head{margin-bottom:32px}.sec-head h2{font-size:22px;line-height:1.3}
+  .sec-lbl{font-size:11px}
+  .mw{padding:0 16px}
+  .btn-p,.btn-o,.btn-white,.btn-case,.btn-gradient,.btn-outline{padding:10px 20px;font-size:13px}
+  .cta-in{flex-direction:column;text-align:center;gap:24px;padding:40px 16px}.cta-in h2{font-size:22px}.cta-btns{justify-content:center}
+  .ft{padding:40px 0 0}.ft-grid{grid-template-columns:1fr;gap:32px}.ft-col{padding:0}.ft-btm{flex-direction:column;gap:8px;text-align:center;margin-top:32px;padding:16px}
+  .wa-float{bottom:16px;right:16px;padding:12px 14px;box-shadow:0 4px 16px rgba(37,211,102,.4)}.wa-float .wa-label{display:none !important}
+  .soc-share{display:none}
+  .ci-social{gap:8px}.ci-social a{width:38px;height:38px;font-size:15px}
+  .breadcrumb{font-size:12px}
+  .fade{transform:none}
+}

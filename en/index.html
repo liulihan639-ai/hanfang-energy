@@ -71,7 +71,40 @@
     .stat-itm .num{opacity:0}.stat-itm.vis .num{animation:fadeUp .5s ease forwards}.stat-itm:nth-child(1).vis .num{animation-delay:.1s}.stat-itm:nth-child(2).vis .num{animation-delay:.2s}.stat-itm:nth-child(3).vis .num{animation-delay:.3s}.stat-itm:nth-child(4).vis .num{animation-delay:.4s}
     .prod-section{opacity:0}.prod-section.vis{animation:fadeUp .6s ease forwards}.solu-section{opacity:0}.solu-section.vis{animation:fadeUp .6s ease forwards}.case-block{opacity:0}.case-block.vis{animation:fadeUp .6s ease forwards}
     @media(max-width:1024px){.hero-in{flex-direction:column;gap:40px;padding:0 24px}.hero-t{flex:none;width:100%}.hero-form{flex:none;width:100%;max-width:480px}.prod-section,.prod-section.reverse{grid-template-columns:1fr}.prod-img{max-height:360px}.solu-section,.solu-section.reverse{grid-template-columns:1fr;direction:ltr}.solu-photo{max-height:300px}.case-block{min-height:420px}.case-content{padding:48px 32px}.case-block.reverse .case-content{align-items:flex-start;text-align:left}.icon-grid{grid-template-columns:repeat(2,1fr)}.ft-grid{grid-template-columns:repeat(2,1fr)}.stats-bar{min-height:60vh}.stats-grid{gap:24px}.quote-inner{grid-template-columns:1fr;gap:40px}.quote-left{text-align:center}.quote-features{grid-template-columns:1fr 1fr}}
-    @media(max-width:768px){.hd-nav,.hd-r{display:none}.mob-tog{display:block}.hero-t h1{font-size:28px}.hero-t{padding:60px 0}.hero{min-height:100vh}.hero-in{min-height:100vh}.sec{padding:56px 0}.sec-head h2{font-size:24px}.icon-grid{grid-template-columns:1fr}.cta-in{grid-template-columns:1fr;gap:32px}.cta-left{text-align:center}.ft-grid{grid-template-columns:1fr}.ft-btm{flex-direction:column;gap:8px;text-align:center}.solu-detail{padding:32px 24px}.form-row{grid-template-columns:1fr}.quote-section{padding:64px 0}.quote-right{padding:28px 20px}.qf-row{grid-template-columns:1fr}.quote-features{grid-template-columns:1fr}}
+    @media(max-width:768px){
+      .hd-nav,.hd-r{display:none}.mob-tog{display:block}
+      .hero{min-height:100svh}.hero-in{min-height:auto;flex-direction:column;gap:0;padding:80px 16px 40px}
+      .hero-t{padding:40px 0 0;flex:none;width:100%}.hero-t h1{font-size:28px;line-height:1.2;letter-spacing:-.5px}.hero-t>p{font-size:14px;margin-bottom:20px;max-width:100%}
+      .hero-certs{gap:10px;margin-bottom:20px}.hero-certs span{font-size:10px;padding:3px 8px}
+      .hero-btn{flex-direction:column;gap:10px}.hero-btn .btn-p,.hero-btn .btn-o{width:100%;justify-content:center}
+      .hero-form{flex:none;width:100%;padding:28px 20px;border-radius:16px;margin-top:24px}
+      .hero-form h3{font-size:18px}.hero-form>p{font-size:13px;margin-bottom:16px}
+      .form-input{padding:10px 14px;font-size:14px}.form-submit{padding:12px;font-size:14px}
+      .scroll-arrow{bottom:24px}
+      .stats-bar{min-height:auto}.stats-content{padding:40px 16px}.stats-content h2{font-size:22px}
+      .stats-grid{gap:20px;flex-wrap:wrap;justify-content:space-between}.stat-itm{flex:0 0 45%}
+      .stat-itm .num{font-size:28px}.stat-highlight .num{font-size:32px}
+      .prod-section,.prod-section.reverse{grid-template-columns:1fr;min-height:auto}
+      .prod-img{max-height:280px}.prod-img img{padding:20px}
+      .prod-specs{padding:28px 20px}.prod-specs h3{font-size:24px}.prod-specs .spec-row{padding:10px 0}
+      .prod-info{padding:28px 20px}.prod-info h3{font-size:20px}.prod-info ul li{font-size:14px;padding:4px 0}
+      .prod-btns{flex-direction:column;gap:10px}.prod-btns a,.prod-btns .ds-wrap{width:100%}.prod-btns .btn-white,.prod-btns .btn-ghost-white{justify-content:center;width:100%}
+      .ds-popup{position:fixed;inset:auto 16px 16px 16px;width:auto;transform:none;bottom:16px;border-radius:16px;max-height:70vh;overflow-y:auto;z-index:200}
+      .ds-popup::after{display:none}
+      .ds-popup.show{opacity:1;visibility:visible;pointer-events:auto}
+      .icon-grid{grid-template-columns:1fr;gap:14px}.icon-box{padding:28px 20px}.icon-box .ic{width:52px;height:52px;margin-bottom:14px}.icon-box h3{font-size:16px}.icon-box p{font-size:13px}
+      .solu-section,.solu-section.reverse{grid-template-columns:1fr;direction:ltr}.solu-photo{max-height:240px}.solu-detail{padding:28px 16px}.solu-detail h3{font-size:20px}
+      .solu-stat{flex-wrap:wrap;gap:12px}
+      .case-block{min-height:360px}.case-content{padding:32px 16px}.case-inner h3{font-size:22px}
+      .case-stats{flex-wrap:wrap;gap:12px}.case-inner ul li{font-size:14px}
+      .case-block.reverse .case-content{align-items:flex-start;text-align:left}
+      .quote-section{padding:48px 0}.quote-inner{grid-template-columns:1fr;gap:32px;padding:0 16px}
+      .quote-left{text-align:left}.quote-left h2{font-size:26px}
+      .quote-features{grid-template-columns:1fr;gap:10px}.quote-feat{padding:10px 14px}
+      .quote-right{padding:24px 16px;border-radius:14px}.qf-row{grid-template-columns:1fr}
+      .qf-group input,.qf-group select,.qf-group textarea{padding:10px 14px;font-size:14px}
+      .qf-submit{padding:12px;font-size:14px}
+    }
   </style>
   <style>
     .wa-float{position:fixed;bottom:28px;right:28px;z-index:99;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:14px 22px;border-radius:50px;font-size:14px;font-weight:600;font-family:var(--ff);box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .3s;cursor:pointer}.wa-float:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,211,102,.5)}.wa-float i{font-size:22px}.wa-float .wa-label{display:none}.wa-float:hover .wa-label{display:inline}@media(max-width:768px){.wa-float{bottom:20px;right:20px;padding:14px 16px}.wa-float .wa-label{display:none}}
@@ -84,12 +117,13 @@
     <div class="hd-in">
       <a href="index.html" class="hd-logo"><img src="../images/logo.png" alt="Hanfang Energy"></a>
       <nav class="hd-nav">
-        <a href="index.html" class="on">Home</a>
-        <a href="products.html">Products</a>
-        <a href="solutions.html">Solutions</a>
-        <a href="about.html">About</a>
-        <a href="news.html">News</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" class="on" data-zh="首页" data-en="Home">首页</a>
+        <a href="products.html" data-zh="产品" data-en="Products">产品</a>
+        <a href="solutions.html" data-zh="解决方案" data-en="Solutions">解决方案</a>
+        <a href="about.html" data-zh="关于" data-en="About">关于</a>
+        <a href="news.html" data-zh="动态" data-en="News">动态</a>
+        <a href="contact.html" data-zh="联系" data-en="Contact">联系</a>
+        <div class="mob-lang"><a href="../index.html">中</a><a href="index.html" class="on">EN</a></div>
       </nav>
       <div class="hd-r">
         <div class="lang-sw"><a href="../" style="padding:5px 12px;font-size:12px;font-weight:600;color:rgba(255,255,255,.4);text-decoration:none;transition:all .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">中</a></div>

@@ -55,6 +55,25 @@ function initPage() {
     });
   });
 
+  document.querySelectorAll('.ds-wrap').forEach(function(wrap) {
+    var popup = wrap.querySelector('.ds-popup');
+    if (!popup) return;
+    wrap.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        e.stopPropagation();
+        var isOpen = popup.classList.contains('show');
+        document.querySelectorAll('.ds-popup.show').forEach(function(p) { p.classList.remove('show'); });
+        if (!isOpen) popup.classList.add('show');
+      }
+    });
+  });
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768 && !e.target.closest('.ds-wrap')) {
+      document.querySelectorAll('.ds-popup.show').forEach(function(p) { p.classList.remove('show'); });
+    }
+  });
+
   var hero = document.querySelector('.hero');
   if (hero) {
     setTimeout(function() { hero.classList.add('in-view'); }, 100);

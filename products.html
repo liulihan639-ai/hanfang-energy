@@ -100,14 +100,17 @@
     }
     @media(max-width:768px){
       .hd-nav,.hd-r{display:none}.mob-tog{display:block}
-      .page-hero{padding:100px 0 60px}.page-hero h1{font-size:28px}
-      .sec{padding:56px 0}
+      .page-hero h1{font-size:26px}
       .cat-grid{grid-template-columns:repeat(2,1fr);gap:12px}
-      .prod-desc{padding:28px 20px}
-      .spec-highlights{grid-template-columns:repeat(2,1fr)}
+      .cat-card-body{padding:14px 12px 18px}.cat-card-body h3{font-size:14px}
+      .prod-detail,.prod-detail.reverse{grid-template-columns:1fr;direction:ltr}
+      .prod-photo{max-height:260px}
+      .prod-desc{padding:24px 16px}.prod-desc h2{font-size:22px}.prod-desc h3{font-size:20px}
+      .spec-highlights{grid-template-columns:repeat(2,1fr);gap:10px}.spec-hl-item{padding:16px 12px}.spec-hl-item .spec-val{font-size:20px}
+      .spec-table-wrap{padding:24px 16px}.spec-table{font-size:13px}.spec-table th,.spec-table td{padding:8px 6px}
       .cta-in{flex-direction:column;text-align:center;gap:24px}
-      .ft-grid{grid-template-columns:1fr}.ft-btm{flex-direction:column;gap:8px;text-align:center}
     }
+
     .wa-float{position:fixed;bottom:28px;right:28px;z-index:99;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:14px 22px;border-radius:50px;font-size:14px;font-weight:600;font-family:var(--ff);box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .3s;cursor:pointer}.wa-float:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,211,102,.5)}.wa-float i{font-size:22px}.wa-float .wa-label{display:none}.wa-float:hover .wa-label{display:inline}@media(max-width:768px){.wa-float{bottom:20px;right:20px;padding:14px 16px}.wa-float .wa-label{display:none}}
   </style>
 </head>
@@ -122,6 +125,7 @@
         <a href="about.html" data-zh="关于" data-en="About">关于</a>
         <a href="news.html" data-zh="动态" data-en="News">动态</a>
         <a href="contact.html" data-zh="联系" data-en="Contact">联系</a>
+        <div class="mob-lang"><a href="products.html" class="on">中</a><a href="en/products.html">EN</a></div>
       </nav>
       <div class="hd-r">
         <div class="lang-sw"><a href="en/products.html" class="lang-btn" style="padding:5px 12px;font-size:12px;font-weight:600;color:rgba(255,255,255,.4);text-decoration:none;transition:all .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">EN</a></div>

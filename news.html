@@ -75,7 +75,7 @@
     .fade{opacity:0;transform:translateY(20px)}.fade.vis{animation:fadeUp .6s ease forwards}@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
     .news-card{opacity:0}.news-card.vis{animation:fadeUp .5s ease forwards}.news-card:nth-child(1).vis{animation-delay:.05s}.news-card:nth-child(2).vis{animation-delay:.1s}.news-card:nth-child(3).vis{animation-delay:.15s}.news-card:nth-child(4).vis{animation-delay:.2s}.news-card:nth-child(5).vis{animation-delay:.25s}.news-card:nth-child(6).vis{animation-delay:.3s}
     @media(max-width:1024px){.news-featured{grid-template-columns:1fr}.news-featured-img{max-height:360px}.news-grid{grid-template-columns:repeat(2,1fr)}.ft-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:768px){.hd-nav,.hd-r{display:none}.mob-tog{display:block}.page-hero{padding:80px 0 60px}.page-hero h1{font-size:28px}.sec{padding:56px 0}.news-grid{grid-template-columns:1fr}.news-featured-body h2{font-size:22px}.news-tabs{gap:6px}.news-tab{padding:8px 16px;font-size:13px}.ft-grid{grid-template-columns:1fr}.ft-btm{flex-direction:column;gap:8px;text-align:center}}
+    @media(max-width:768px){.hd-nav,.hd-r{display:none}.mob-tog{display:block}.page-hero h1{font-size:26px}.news-grid{grid-template-columns:1fr}.news-card-body{padding:16px}.news-card-body h3{font-size:16px}.news-card-body p{font-size:13px}.news-featured{grid-template-columns:1fr}.news-featured-img{max-height:220px}.news-featured-body{padding:20px 16px}.news-featured-body h2{font-size:20px}.news-tabs{gap:4px;flex-wrap:wrap}.news-tab{padding:6px 12px;font-size:12px}}
     .wa-float{position:fixed;bottom:28px;right:28px;z-index:99;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:14px 22px;border-radius:50px;font-size:14px;font-weight:600;font-family:var(--ff);box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .3s;cursor:pointer}.wa-float:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,211,102,.5)}.wa-float i{font-size:22px}.wa-float .wa-label{display:none}.wa-float:hover .wa-label{display:inline}@media(max-width:768px){.wa-float{bottom:20px;right:20px;padding:14px 16px}.wa-float .wa-label{display:none}}
   </style>
 </head>
@@ -91,6 +91,7 @@
         <a href="about.html" data-zh="关于" data-en="About">关于</a>
         <a href="news.html" class="on" data-zh="动态" data-en="News">动态</a>
         <a href="contact.html" data-zh="联系" data-en="Contact">联系</a>
+        <div class="mob-lang"><a href="news.html" class="on">中</a><a href="en/news.html">EN</a></div>
       </nav>
       <div class="hd-r">
         <div class="lang-sw"><a href="en/news.html" class="lang-btn" style="padding:5px 12px;font-size:12px;font-weight:600;color:rgba(255,255,255,.4);text-decoration:none;transition:all .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">EN</a></div>
